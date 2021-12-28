@@ -4,7 +4,8 @@
 <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <application
-        android:allowBackup="true"
+        android:name="com.divyanshu.spaceshooter.MyApplication"
+    android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="SpaceShooter"
         android:roundIcon="@mipmap/ic_launcher_round"
