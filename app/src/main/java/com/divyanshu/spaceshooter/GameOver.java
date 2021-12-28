@@ -9,9 +9,17 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class GameOver extends AppCompatActivity {
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
+public class GameOver extends AppCompatActivity {
+    private AdView mAdView;
     TextView tvPoints;
+    private Object binding;
+    private Object adView;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -20,6 +28,18 @@ public class GameOver extends AppCompatActivity {
         int points = getIntent().getExtras().getInt("points");
         tvPoints = findViewById(R.id.tvPoints);
         tvPoints.setText("" + points);
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+
     }
 
     public void restart(View view) {
@@ -30,5 +50,10 @@ public class GameOver extends AppCompatActivity {
 
     public void exit(View view) {
         finish();
+    }
+
+    private static class BaseAdView {
+        public static void loadAd(AdRequest adRequest) {
+        }
     }
 }

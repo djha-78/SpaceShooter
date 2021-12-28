@@ -8,12 +8,15 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/play_big"
-            android:onClick="startGame" />
+
     </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/play_big"
+        android:onClick="startGame" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,4 +26,6 @@
         android:textSize="20sp"
         android:onClick="startGame" />
 
+
 </LinearLayout>
+

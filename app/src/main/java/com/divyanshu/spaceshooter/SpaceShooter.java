@@ -1,5 +1,6 @@
 package com.divyanshu.spaceshooter;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -66,6 +67,7 @@ public class SpaceShooter extends View {
         scorePaint.setTextAlign(Paint.Align.LEFT);
     }
 
+    @SuppressLint("DrawAllocation")
     @Override
     protected void onDraw(Canvas canvas) {
         // Draw background, Points and life on Canvas
@@ -96,21 +98,21 @@ public class SpaceShooter extends View {
         // Till enemyShotAction is false, enemy should fire shots from random travelled distance
         if(enemyShotAction == false){
             if(enemySpaceship.ex >= 200 + random.nextInt(400)){
-                Shoot enemyShot = new Shoot(context,
+                @SuppressLint("DrawAllocation") Shoot enemyShot = new Shoot(context,
                         enemySpaceship.ex + enemySpaceship.getEnemySpaceshipWidth() / 2, enemySpaceship.ey );
                 enemyShots.add(enemyShot);
                 // We're making enemyShotAction to true so that enemy can take a short at a time
                 enemyShotAction = true;
             }
             if(enemySpaceship.ex >= 400 + random.nextInt(800)){
-                Shoot enemyShot = new Shoot(context,
+                @SuppressLint("DrawAllocation") Shoot enemyShot = new Shoot(context,
                         enemySpaceship.ex + enemySpaceship.getEnemySpaceshipWidth() / 2, enemySpaceship.ey );
                 enemyShots.add(enemyShot);
                 // We're making enemyShotAction to true so that enemy can take a short at a time
                 enemyShotAction = true;
             }
             else{
-                Shoot enemyShot = new Shoot(context,
+                @SuppressLint("DrawAllocation") Shoot enemyShot = new Shoot(context,
                         enemySpaceship.ex + enemySpaceship.getEnemySpaceshipWidth() / 2, enemySpaceship.ey );
                 enemyShots.add(enemyShot);
                 // We're making enemyShotAction to true so that enemy can take a short at a time
