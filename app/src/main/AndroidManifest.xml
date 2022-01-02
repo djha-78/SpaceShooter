@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.divyanshu.spaceshooter">
-<uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
-        android:name="com.divyanshu.spaceshooter.MyApplication"
-    android:allowBackup="true"
+        android:name=".MyApplication"
+        android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="SpaceShooter"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -14,9 +16,10 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-3940256099942544~3347511713" />
 
-        <activity android:name=".StartUp"
+        <activity
+            android:name=".StartUp"
             android:exported="true"
             android:screenOrientation="landscape">
             <intent-filter>
@@ -25,14 +28,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-        <activity android:name=".MainActivity"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity android:name=".GameOver"
-            android:screenOrientation="landscape">
-        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GameOver"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>

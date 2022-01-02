@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/contactbj969/StudioProjects/SpaceShooter/app/src/main/res/drawable/ic_baseline_privacy_tip_24.xml" value="0.19814814814814816" />
         <entry key="..\:/Users/contactbj969/StudioProjects/SpaceShooter/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" />
-        <entry key="..\:/Users/contactbj969/StudioProjects/SpaceShooter/app/src/main/res/layout/game_over.xml" value="0.33" />
+        <entry key="..\:/Users/contactbj969/StudioProjects/SpaceShooter/app/src/main/res/layout/activity_privacy.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/contactbj969/StudioProjects/SpaceShooter/app/src/main/res/layout/activity_terms.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/contactbj969/StudioProjects/SpaceShooter/app/src/main/res/layout/activity_termsand_conditions.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/contactbj969/StudioProjects/SpaceShooter/app/src/main/res/layout/activity_termsand_conditions2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/contactbj969/StudioProjects/SpaceShooter/app/src/main/res/layout/game_over.xml" value="0.18" />
         <entry key="..\:/Users/contactbj969/StudioProjects/SpaceShooter/app/src/main/res/layout/gameover.xml" value="0.17300724637681159" />
-        <entry key="..\:/Users/contactbj969/StudioProjects/SpaceShooter/app/src/main/res/layout/startup.xml" value="0.2" />
+        <entry key="..\:/Users/contactbj969/StudioProjects/SpaceShooter/app/src/main/res/layout/startup.xml" value="0.22" />
       </map>
     </option>
   </component>
